@@ -1,78 +1,44 @@
-html>
-   <head>
-      <title>Login</title>
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />			    
-</head>
+html,
+body {
+  height: 100%;
+}
 
-<body>
-<div id="main">
-   <div class="container">
-	   <div id="header">
-		   <div id="logo">
-    		   <h1>IE.png</h1>
-		   </div>
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
 
-    		<div id="tagline">
-        	   <h3>Your Job Page</h3>
-		   </div>
-         <div style="clear:none"></div>
-    		
-         <ul id="menu">
-           <li><a href="#">Home</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Contact</a></li>
-	       </ul>
-         <div style="clear:both"></div>
-      </div>
-      <form>
-
-      <table border=1>
-      <tr><td> Username: <input type="text" size=5 <tr>
-      <tr><td> Password: <input type="text" size=5 <tr>
-      </table>
-      <input type="button" value="Login" onclick="msg()">
-      <input type="button" value="New User" onclick="msg()">
-<br>
-      <div id="content">
-    <div id="news">
-        <h3>Latest Updates</h3>
-        <h4>Vestibulum id nulla eu sapien pellentesque</h4>
-        <small>June 1, 2020</small>
-        <p>Ut vel turpis a orci pulvinar tincidunt. Mauris id purus turpis. Aliquam metus arcu, 
-            facilisis quis pellentesque vitae, dapibus non nulla. Nulla suscipit sagittis sodales. 
-            Etiam laoreet ante in purus laoreet id malesuada dui pretium.<a href="#"> Read More</a></p>
-    <h4>Vestibulum id nulla eu sapien pellentesque</h4>
-    <small>June 1, 2009</small>
-    <p>Ut vel turpis a orci pulvinar tincidunt. Mauris id purus turpis. Aliquam metus arcu, 
-        facilisis quis pellentesque vitae, dapibus non nulla. Nulla suscipit sagittis sodales. 
-        Etiam laoreet ante in purus laoreet id malesuada dui pretium.<a href="#"> Read More</a></p>
-    </div><!--end news-->
-		</div>
-     
-		<div id="sidebar">
-                <div id="popular">
-                    <h3>Popular Items</h3>
-                    <ul>
-                        <li><a href="#">Lorem ipsum dolor site amet</a></li>
-                    </ul>
-                </div>
-
-                <div id="cool">
-                    <h3>Cool items</h3>
-                    <ul>
-                        <li><a href="#">Calabi Yau manifolds!</a></li>
-                    </ul>
-               </div>
-      </div>
-      <div style="clear:both"></div>
-
-   </div>
-         
-   <div id="footer">
-        <div class="container">
-            <p>Your footer info</p>
-        </div><
-    </div>
-</div>
-</body>
-</html>
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
