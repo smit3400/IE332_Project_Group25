@@ -1,78 +1,35 @@
-html>
-   <head>
-      <title>Login</title>
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />			    
-</head>
-
-<body>
-<div id="main">
-   <div class="container">
-	   <div id="header">
-		   <div id="logo">
-    		   <h1>Logo</h1>
-		   </div>
-
-    		<div id="tagline">
-        	   <h3>Your Job Page</h3>
-		   </div>
-         <div style="clear:none"></div>
-    		
-         <ul id="menu">
-           <li><a href="#">Home</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Contact</a></li>
-	       </ul>
-         <div style="clear:both"></div>
-      </div>
-      <form>
-
-      <table border=1>
-      <tr><td> Username: <input type="text" size=5 <tr>
-      <tr><td> Password: <input type="text" size=5 <tr>
-      </table>
-      <input type="button" value="Login" onclick="msg()">
-      <input type="button" value="New User" onclick="msg()">
-<br>
-      <div id="content">
-    <div id="news">
-        <h3>Latest Updates</h3>
-        <h4>Vestibulum id nulla eu sapien pellentesque</h4>
-        <small>June 1, 2020</small>
-        <p>Ut vel turpis a orci pulvinar tincidunt. Mauris id purus turpis. Aliquam metus arcu, 
-            facilisis quis pellentesque vitae, dapibus non nulla. Nulla suscipit sagittis sodales. 
-            Etiam laoreet ante in purus laoreet id malesuada dui pretium.<a href="#"> Read More</a></p>
-    <h4>Vestibulum id nulla eu sapien pellentesque</h4>
-    <small>June 1, 2009</small>
-    <p>Ut vel turpis a orci pulvinar tincidunt. Mauris id purus turpis. Aliquam metus arcu, 
-        facilisis quis pellentesque vitae, dapibus non nulla. Nulla suscipit sagittis sodales. 
-        Etiam laoreet ante in purus laoreet id malesuada dui pretium.<a href="#"> Read More</a></p>
-    </div><!--end news-->
-		</div>
-     
-		<div id="sidebar">
-                <div id="popular">
-                    <h3>Popular Items</h3>
-                    <ul>
-                        <li><a href="#">Lorem ipsum dolor site amet</a></li>
-                    </ul>
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Welcome back!</h3>
+              <form>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Email address</label>
                 </div>
 
-                <div id="cool">
-                    <h3>Cool items</h3>
-                    <ul>
-                        <li><a href="#">Calabi Yau manifolds!</a></li>
-                    </ul>
-               </div>
-      </div>
-      <div style="clear:both"></div>
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
 
-   </div>
-         
-   <div id="footer">
-        <div class="container">
-            <p>Your footer info</p>
-        </div><
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember password</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                <div class="text-center">
+                  <a class="small" href="#">Forgot password?</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-</body>
-</html>
