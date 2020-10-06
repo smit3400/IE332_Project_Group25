@@ -1,1 +1,18 @@
-
+<form>
+  
+<div class="form-group"><label for="exampleInputEmail1">First Name</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter first name" aria-describedby="emailHelp" />
+  
+<div class="form-group"><label for="exampleInputEmail1">Last Name</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter last name" aria-describedby="emailHelp" />
+  
+<div class="form-group"><label for="exampleInputEmail1">Email Address</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter emall" aria-describedby="emailHelp" />
+  
+<div class="form-group"><label for="exampleInputPassword1">Phone Number</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter phone" />
+  
+<div class="form-group"><label for="exampleFormControlSelect1">Major</label><select id="exampleFormControlSelect1" class="form-control">
+<option>Industrial Engineering</option>
+<option>FYE</option>
+</select>
+<div>&nbsp;
+  
+<button class="btn btn-primary" type="submit">Submit</button></div>
+</form>
