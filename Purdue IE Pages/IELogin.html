@@ -1,34 +1,38 @@
-<class="container-fluid">
-  <class="row no-gutter">
-    <class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
-    <class="col-md-8 col-lg-6">
-      <class="login d-flex align-items-center py-5">
-        <class="container">
-          <class="row">
-            <class="col-md-9 col-lg-8 mx-auto">
+</form>
+
+<p>&nbsp;</p>
+
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
               <h3 class="login-heading mb-4">Hello!</h3>
-              <label for="inputEmail">Username</label>
               <form>
-                <class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Username/Email address" required autofocus>
-                  <label for="inputEmail">Password</label>           
-                <class="form-label-group">
+                <div class="form-label-group">
+                  <label for="inputEmail">Username:</label>
+                                </div>
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <div class="form-label-group">
+                </div>
+                   <label for="inputPassword">Password:</label>
+                </div>
                   <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <class="custom-control custom-checkbox mb-3">
+                <div class="custom-control custom-checkbox mb-3">
                   <input type="checkbox" class="custom-control-input" id="customCheck1">
                   <label class="custom-control-label" for="customCheck1">Remember password</label>
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
-                <div class="text-center">
-                  <a class="small" href="#">Forgot password?</a></div>
+                </div>           
+              <a class="small" href="#">Forgot password?</a></div>
               </form>
-                  
-                  // info in navigation menu
-                  <a href="#?page=IELogin>IELogin</a>
-                  <a href="#?page=>IEProfilePage>IE Profile</a>    
-                  <a href="#?page=IESurveyPage>IE Survey Page</a>
-                  <a href="#?page=IEAdvicePage>IE Advice Page</a>
-                  
-                  <?php
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>     
+              <div class="text-center">
+              </form>
+          
+          <p><a href="&quot;#?page=IELogin">IELogin</a> <a href="&quot;#?page=">IEProfilePage&gt;IE Profile</a> <a href="&quot;#?page=IESurveyPage">IE Survey Page</a> <a href="&quot;#?page=IEAdvicePage">IE Advice Page</a></p>
+
+<!--?php 
                   $page = $_GET["page"];
                   if ( $page=="IELogin" || !isset($page) ) {
                      //echo IE Login content
@@ -39,4 +43,6 @@
                   } else if ( $page=="IEAdvicePage" ) {
                      //echo IE Advice Page content
                   }
-                  ?>  
+                  ?-->
+
+<p>&nbsp;</p>
