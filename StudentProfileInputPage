@@ -1,17 +1,22 @@
 <form>
 <div class="form-group"><label for="exampleInputEmail1">First Name</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter first name" aria-describedby="emailHelp" />
 <div>&nbsp;
+  
 <div class="form-group"><label for="exampleInputEmail1">Last Name</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter last name" aria-describedby="emailHelp" />
 <div>&nbsp;
+  
 <div class="form-group"><label for="exampleInputEmail1">Email Address</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter emall" aria-describedby="emailHelp" />
 <div>&nbsp;
+  
 <div class="form-group"><label for="exampleInputPassword1">Phone Number</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter phone" />
 <div>&nbsp;
+  
 <div class="form-group"><label for="exampleFormControlSelect1">Major </label><select id="exampleFormControlSelect1" class="form-control">
 <option>Industrial Engineering</option>
 <option>FYE</option>
 </select>
 <div>&nbsp;
+  
 <div class="form-group"><label for="exampleFormControlSelect1">Location Preference </label><select id="exampleFormControlSelect1" class="form-control">
 <option>AL</option>
 <option>AK</option>
@@ -65,7 +70,18 @@
 <option>WY</option>
 </select>
 <div>&nbsp;
-  <div class="form-group"><label for="exampleInputPassword1">GPA </label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter GPA" />
+  
+<div class="form-group"><label for="exampleInputPassword1">GPA </label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter GPA" />
 <div>&nbsp;
-<div>&nbsp; <button class="btn btn-primary" type="submit">Submit</button></div>
+  
+<div class="form-group"><label for="exampleInputPassword1">Experience</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter experience" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="exampleInputPassword1">Courses</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter courses" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="exampleInputPassword1">Year</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter year" />
+<div>&nbsp; 
+  
+<button class="btn btn-primary" type="submit">Submit</button></div>
 </form>
