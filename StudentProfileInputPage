@@ -1,4 +1,13 @@
-<form>
+<html>
+<body>
+
+<h1>Student Profile Setup</h1>
+<p>Welcome! Please enter all relevant information to create your student profile page.</p>
+  
+<form action="/action_page.php"
+  <label for="img">Select profile image:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+  <div>&nbsp;
 <div class="form-group"><label for="exampleInputEmail1">First Name</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter first name" aria-describedby="emailHelp" />
 <div>&nbsp;
   
@@ -18,56 +27,10 @@
 <div>&nbsp;
   
 <div class="form-group"><label for="exampleFormControlSelect1">Location Preference </label><select id="exampleFormControlSelect1" class="form-control">
-<option>AL</option>
-<option>AK</option>
-<option>AZ</option>
-<option>AR</option>
-<option>CA</option>
-<option>CO</option>
-<option>CT</option>
-<option>DE</option>
-<option>FL</option>
-<option>GA</option>
-<option>HI</option>
-<option>ID</option>
-<option>IL</option>
-<option>IN</option>
-<option>IA</option>
-<option>KS</option>
-<option>KY</option>
-<option>LA</option>
-<option>ME</option>
-<option>MD</option>
-<option>MA</option>
-<option>MI</option>
-<option>MN</option>
-<option>MS</option>
-<option>MO</option>
-<option>MT</option>
-<option>NE</option>
-<option>NV</option>
-<option>NH</option>
-<option>NJ</option>
-<option>NM</option>
-<option>NY</option>
-<option>NC</option>
-<option>ND</option>
-<option>OH</option>
-<option>OK</option>
-<option>OR</option>
-<option>PA</option>
-<option>RI</option>
-<option>SC</option>
-<option>SD</option>
-<option>TN</option>
-<option>TX</option>
-<option>UT</option>
-<option>VT</option>
-<option>VA</option>
-<option>WA</option>
-<option>WV</option>
-<option>WI</option>
-<option>WY</option>
+<option>Northeast</option>
+<option>South</option>
+<option>Midwest</option>
+<option>West</option>
 </select>
 <div>&nbsp;
   
@@ -81,7 +44,64 @@
 <div>&nbsp;
   
 <div class="form-group"><label for="exampleInputPassword1">Year</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter year" />
-<div>&nbsp; 
-  
+<div>&nbsp;  
+<div class="form-group"><label for="exampleFormControlSelect1">Oportunity Type </label><select id="exampleFormControlSelect1" class="form-control">
+<option>Internship</option>
+<option>Co-op</option>
+<option>Full-time</option>
+</select>
+<div>&nbsp;
+<div class="form-group"><label for="exampleFormControlSelect1">Willing to relocate? </label><select id="exampleFormControlSelect1" class="form-control">
+<option>Yes</option>
+<option>No</option>
+</select>
+<div>&nbsp;
+<div class="form-group"><label for="exampleFormControlSelect1">Will you now or in the future require visa sponsorship for employment? </label><select id="exampleFormControlSelect1" class="form-control">
+<option>Yes</option>
+<option>No</option>
+</select>
+<div>&nbsp;
+<div class="form-group"><label for="exampleFormControlSelect1">Statistics skill level (0-9)</label><select id="exampleFormControlSelect1" class="form-control">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+<div>&nbsp;
+<div class="form-group"><label for="exampleFormControlSelect1">Programming skill level (0-9)</label><select id="exampleFormControlSelect1" class="form-control">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+<div>&nbsp;
+<div class="form-group"><label for="exampleFormControlSelect1">Technical Design skill level (0-9)</label><select id="exampleFormControlSelect1" class="form-control">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+<div>&nbsp;
 <button class="btn btn-primary" type="submit">Submit</button></div>
-</form>
+  
+  </form>
+</body>
+</html>
