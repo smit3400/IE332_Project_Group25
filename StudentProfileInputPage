@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <body>
 
@@ -8,16 +9,16 @@
   <label for="img">Select profile image:</label>
   <input type="file" id="img" name="img" accept="image/*">
   <div>&nbsp;
-<div class="form-group"><label for="exampleInputEmail1">First Name</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter first name" aria-describedby="emailHelp" />
+<div class="form-group"><label for="fname">First Name</label> <input id="fname" class="form-control" type="text" placeholder="Enter first name" aria-describedby="fname" />
 <div>&nbsp;
   
-<div class="form-group"><label for="exampleInputEmail1">Last Name</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter last name" aria-describedby="emailHelp" />
+<div class="form-group"><label for="lname">Last Name</label> <input id="lname" class="form-control" type="text" placeholder="Enter last name" aria-describedby="lname" />
 <div>&nbsp;
   
-<div class="form-group"><label for="exampleInputEmail1">Email Address</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter emall" aria-describedby="emailHelp" />
+<div class="form-group"><label for="Email1">Email Address</label> <input id="Email1" class="form-control" type="email" placeholder="Enter email" aria-describedby="Email1" />
 <div>&nbsp;
   
-<div class="form-group"><label for="exampleInputPassword1">Phone Number</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter phone" />
+<div class="form-group"><label for="phonenum">Phone Number (area code first) </label> <input id="phonenum" class="form-control" type="tel" pattern="([0-9]{3})-[0-9]{3}-[0-9]{4}" placeholder="(123)-456-7890" />
 <div>&nbsp;
   
 <div class="form-group"><label for="exampleFormControlSelect1">Major </label><select id="exampleFormControlSelect1" class="form-control">
@@ -34,34 +35,38 @@
 </select>
 <div>&nbsp;
   
-<div class="form-group"><label for="exampleInputPassword1">GPA </label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter GPA" />
+<div class="form-group"><label for="gpa">GPA </label> <input id="gpa" class="form-control" type="text" placeholder="Enter GPA" />
 <div>&nbsp;
   
-<div class="form-group"><label for="exampleInputPassword1">Experience</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter experience" />
+<div class="form-group"><label for="studentexperience">Experience</label> <input id="studentexperience" class="form-control" type="text" placeholder="Enter experience" />
 <div>&nbsp;
   
-<div class="form-group"><label for="exampleInputPassword1">Courses</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter courses" />
+<div class="form-group"><label for="studentcourses">Courses</label> <input id="studentcourses" class="form-control" type="text" placeholder="Enter courses" />
 <div>&nbsp;
   
-<div class="form-group"><label for="exampleInputPassword1">Year</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter year" />
+<div class="form-group"><label for="studentyear">Year</label> <input id="studentyear" class="form-control" type="text" placeholder="Enter year" />
 <div>&nbsp;  
-<div class="form-group"><label for="exampleFormControlSelect1">Oportunity Type </label><select id="exampleFormControlSelect1" class="form-control">
+
+<div class="form-group"><label for="opportunitytype">Oportunity Type </label><select id="opportunitytype" class="form-control">
 <option>Internship</option>
 <option>Co-op</option>
 <option>Full-time</option>
 </select>
 <div>&nbsp;
-<div class="form-group"><label for="exampleFormControlSelect1">Willing to relocate? </label><select id="exampleFormControlSelect1" class="form-control">
+
+<div class="form-group"><label for="relocate">Willing to relocate? </label><select id="relocate" class="form-control">
 <option>Yes</option>
 <option>No</option>
 </select>
 <div>&nbsp;
-<div class="form-group"><label for="exampleFormControlSelect1">Will you now or in the future require visa sponsorship for employment? </label><select id="exampleFormControlSelect1" class="form-control">
+
+<div class="form-group"><label for="visasponsor">Will you now or in the future require visa sponsorship for employment? </label><select id="visasponsor" class="form-control">
 <option>Yes</option>
 <option>No</option>
 </select>
 <div>&nbsp;
-<div class="form-group"><label for="exampleFormControlSelect1">Statistics skill level (0-9)</label><select id="exampleFormControlSelect1" class="form-control">
+
+<div class="form-group"><label for="statsskils">Statistics skill level (0-9) </label><select id="statsskils" class="form-control">
   <option>0</option>
   <option>1</option>
   <option>2</option>
@@ -74,7 +79,8 @@
   <option>9</option>
 </select>
 <div>&nbsp;
-<div class="form-group"><label for="exampleFormControlSelect1">Programming skill level (0-9)</label><select id="exampleFormControlSelect1" class="form-control">
+
+<div class="form-group"><label for="programmingskills">Programming skill level (0-9) </label><select id="programmingskills" class="form-control">
   <option>0</option>
   <option>1</option>
   <option>2</option>
@@ -87,7 +93,8 @@
   <option>9</option>
 </select>
 <div>&nbsp;
-<div class="form-group"><label for="exampleFormControlSelect1">Technical Design skill level (0-9)</label><select id="exampleFormControlSelect1" class="form-control">
+
+<div class="form-group"><label for="techdesign">Technical Design skill level (0-9) </label><select id="techdesign" class="form-control">
   <option>0</option>
   <option>1</option>
   <option>2</option>
@@ -100,6 +107,7 @@
   <option>9</option>
 </select>
 <div>&nbsp;
+
 <button class="btn btn-primary" type="submit">Submit</button></div>
   
   </form>
