@@ -1,18 +1,71 @@
 <form>
-  
 <div class="form-group"><label for="exampleInputEmail1">First Name</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter first name" aria-describedby="emailHelp" />
-  
+<div>&nbsp;
 <div class="form-group"><label for="exampleInputEmail1">Last Name</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter last name" aria-describedby="emailHelp" />
-  
+<div>&nbsp;
 <div class="form-group"><label for="exampleInputEmail1">Email Address</label> <input id="exampleInputEmail1" class="form-control" type="email" placeholder="Enter emall" aria-describedby="emailHelp" />
-  
+<div>&nbsp;
 <div class="form-group"><label for="exampleInputPassword1">Phone Number</label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter phone" />
-  
-<div class="form-group"><label for="exampleFormControlSelect1">Major</label><select id="exampleFormControlSelect1" class="form-control">
+<div>&nbsp;
+<div class="form-group"><label for="exampleFormControlSelect1">Major </label><select id="exampleFormControlSelect1" class="form-control">
 <option>Industrial Engineering</option>
 <option>FYE</option>
 </select>
 <div>&nbsp;
-  
-<button class="btn btn-primary" type="submit">Submit</button></div>
+<div class="form-group"><label for="exampleFormControlSelect1">Location Preference </label><select id="exampleFormControlSelect1" class="form-control">
+<option>AL</option>
+<option>AK</option>
+<option>AZ</option>
+<option>AR</option>
+<option>CA</option>
+<option>CO</option>
+<option>CT</option>
+<option>DE</option>
+<option>FL</option>
+<option>GA</option>
+<option>HI</option>
+<option>ID</option>
+<option>IL</option>
+<option>IN</option>
+<option>IA</option>
+<option>KS</option>
+<option>KY</option>
+<option>LA</option>
+<option>ME</option>
+<option>MD</option>
+<option>MA</option>
+<option>MI</option>
+<option>MN</option>
+<option>MS</option>
+<option>MO</option>
+<option>MT</option>
+<option>NE</option>
+<option>NV</option>
+<option>NH</option>
+<option>NJ</option>
+<option>NM</option>
+<option>NY</option>
+<option>NC</option>
+<option>ND</option>
+<option>OH</option>
+<option>OK</option>
+<option>OR</option>
+<option>PA</option>
+<option>RI</option>
+<option>SC</option>
+<option>SD</option>
+<option>TN</option>
+<option>TX</option>
+<option>UT</option>
+<option>VT</option>
+<option>VA</option>
+<option>WA</option>
+<option>WV</option>
+<option>WI</option>
+<option>WY</option>
+</select>
+<div>&nbsp;
+  <div class="form-group"><label for="exampleInputPassword1">GPA </label> <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Enter GPA" />
+<div>&nbsp;
+<div>&nbsp; <button class="btn btn-primary" type="submit">Submit</button></div>
 </form>
