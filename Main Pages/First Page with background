@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://cdn1.vectorstock.com/i/1000x1000/14/95/gray-handshake-icon-on-white-background-vector-3741495.jpg');
+  background-repeat: no-repeat;
+  background-size: 500px 800px;
+  background-position: 100% 25%;
+}
+</style>
+</head>
+<h5 class="card-title text-muted text-uppercase text-center">
+  <hr>
+  <Strong>Students</Strong></h5>
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>Profile</li>
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>Job Finder</li>
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>Company Ratings</li>
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>Career Advice</li>
+</ul>
+<a href="#" class="btn btn-block btn-primary text-uppercase">I am a Student</a>
+<!-- Plus Tier -->
+<h5 class="card-title text-muted text-uppercase text-center">
+ <hr>
+  <Strong>Employers</Strong></h5>
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>Profile</li>
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>Advice for Candidates</li>
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>Candidate Matching</li>
+</ul>
+<a href="#" class="btn btn-block btn-primary text-uppercase">I am an Employer</a>
+<!-- Pro Tier -->
+<h5 class="card-title text-muted text-uppercase text-center">
+  <hr>
+  <Strong>Purdue IE Advisors</Strong></h5>
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>Provide Student Advice</li>
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>Develop and Send Surveys</li>
+  <li><span class="fa-li"><i class="fas fa-check"></i></span>Track Hiring Trends</li>
+</ul>
+<a href="#" class="btn btn-block btn-primary text-uppercase">I am a Purdue IE Advisor</a>
