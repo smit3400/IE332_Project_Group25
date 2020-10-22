@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
 
+<h1>Employer Profile Setup</h1>
+<p>Welcome! Please enter all relevant information to create your employer profile page.</p>
+  
+<form action="/action_page.php"
+  <label for="img">Select profile image:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+  <div>&nbsp;
+<div class="form-group"><label for="cname">Company Name</label> <input id="cname" class="form-control" type="text" placeholder="Enter company name" aria-describedby="cname" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="cemail">Email Address</label> <input id="cemail" class="form-control" type="email" placeholder="Enter email" aria-describedby="cemail" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="comphonenum">Phone Number (area code first) </label> <input id="comphonenum" class="form-control" type="tel" pattern="([0-9]{3})-[0-9]{3}-[0-9]{4}" placeholder="(123)-456-7890" />
+<div>&nbsp;
+
+<div>&nbsp;
+
+<button class="btn btn-primary" type="submit">Submit</button></div>
+  
+  </form>
+</body>
+</html>
