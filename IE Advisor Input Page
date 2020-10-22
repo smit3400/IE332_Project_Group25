@@ -9,7 +9,7 @@
 <div>&nbsp;
 <div class="form-group"><label for="Email1">Email Address</label> <input id="Email1" class="form-control" type="email" placeholder="Enter email" aria-describedby="Email1" />
 <div>&nbsp;
-<div class="form-group"><label for="phonenum">Phone Number (area code first) </label> <input id="phonenum" class="form-control" pattern="([0-9]{3})-[0-9]{3}-[0-9]{4}" type="tel" placeholder="(123)-456-7890" />
+<div class="form-group"><label for="phonenum">Phone Number (area code first) </label> <input id="phonenum" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" placeholder="123-456-7890" />
 
 <div>&nbsp; <button class="btn btn-primary" type="submit">Submit</button></div>
   
