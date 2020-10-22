@@ -15,13 +15,13 @@
 <div class="form-group"><label for="cemail">Email Address</label> <input id="cemail" class="form-control" type="email" placeholder="Enter email" aria-describedby="cemail" />
 <div>&nbsp;
   
-<div class="form-group"><label for="comphonenum">Phone Number (area code first) </label> <input id="comphonenum" class="form-control" type="tel" pattern="([0-9]{3})-[0-9]{3}-[0-9]{4}" placeholder="(123)-456-7890" />
+<div class="form-group"><label for="comphonenum">Phone Number (area code first) </label> <input id="comphonenum" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
 <div>&nbsp;
 
 <div>&nbsp;
 
 <button class="btn btn-primary" type="submit">Submit</button></div>
   
-  </form>
+</form>
 </body>
 </html>
