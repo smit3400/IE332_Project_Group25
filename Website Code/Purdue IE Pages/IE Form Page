@@ -1,0 +1,16 @@
+<p>&nbsp;</p>
+<h1>IE Advisor Profile Setup</h1>
+<p>Welcome! Please enter all relevant information to create your Advisor profile page.</p>
+<form action="/action_page.php">Select profile image: <input id="img" accept="image/*" name="img" type="file" />
+<div>&nbsp;
+<div class="form-group"><label for="fname">First Name</label> <input id="fname" class="form-control" type="text" placeholder="Enter first name" aria-describedby="fname" />
+<div>&nbsp;
+<div class="form-group"><label for="lname">Last Name</label> <input id="lname" class="form-control" type="text" placeholder="Enter last name" aria-describedby="lname" />
+<div>&nbsp;
+<div class="form-group"><label for="Email1">Email Address</label> <input id="Email1" class="form-control" type="email" placeholder="Enter email" aria-describedby="Email1" />
+<div>&nbsp;
+<div class="form-group"><label for="phonenum">Phone Number (area code first) </label> <input id="phonenum" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" placeholder="123-456-7890" />
+
+<div>&nbsp; <button class="btn btn-primary" type="submit">Submit</button></div>
+  
+</form>
