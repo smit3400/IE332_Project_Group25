@@ -4,7 +4,7 @@
 <body>
 
 <h1>Student Profile Setup</h1>
-<p>Welcome! Please enter all relevant information to create your student profile page.</p>
+<p>Welcome! Please enter all information to create your profile page.</p>
   
 <form action="/action_page.php"
   <label for="img">Select profile image:</label>
