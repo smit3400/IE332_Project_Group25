@@ -19,33 +19,179 @@
   
 <div class="form-group"><label for="comphonenum">Phone Number (area code first) </label> <input id="comphonenum" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
 <div>&nbsp;
+  <div>&nbsp;
   
 <div class="form-group"><label for="jtitle">Job #1 Title</label> <input id="jtitle" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle" />
 <div>&nbsp;
   
-<div class="form-group"><label for="jrequire">Job #1 Requirements</label> <input id="jrequire" class="form-control" type="text" placeholder="Enter Requirements" aria-describedby="jrequire" />
+  <div class="form-group"><label for="jdescript">Job #1 Description</label> <input id="jdescript" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript" />
 <div>&nbsp;
   
-<div class="form-group"><label for="jdescript">Job #1 Description</label> <input id="jdescript" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript" />
+  <div class="form-group"><label for="rmajor">Required Major </label><select id="rmajor" class="form-control">
+<option>Industrial Engineering</option>
+<option>FYE</option>
+</select>
 <div>&nbsp;
+  
+<div class="form-group"><label for="exampleFormControlSelect1">Job Location </label><select id="exampleFormControlSelect1" class="form-control">
+<option>Northeast</option>
+<option>South</option>
+<option>Midwest</option>
+<option>West</option>
+</select>
+<div>&nbsp;
+  
+  <div class="form-group"><label for="mgpa">Minimum GPA </label> <input id="mgpa" class="form-control" type="text" placeholder="Enter GPA" />
+<div>&nbsp;
+  
+  <div class="form-group"><label for="pstudentcourses">Preferred Courses Taken</label> <input id="pstudentcourses" class="form-control" type="text" placeholder="Enter courses" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="mstudentyear">Minimum Year</label> <input id="mstudentyear" class="form-control" type="text" placeholder="Enter year" />
+<div>&nbsp;  
+
+<div class="form-group"><label for="opportunitytype">Oportunity Type </label><select id="opportunitytype" class="form-control">
+<option>Internship</option>
+<option>Co-op</option>
+<option>Full-time</option>
+</select>
+<div>&nbsp;
+  
+  <div class="form-group"><label for="visasponsor">Sponsorship Available Y/N? </label><select id="visasponsor" class="form-control">
+<option>Yes</option>
+<option>No</option>
+</select>
+<div>&nbsp;
+
+<div class="form-group"><label for="pstatsskils">Preferred statistics skill level (0-9) </label><select id="pstatsskils" class="form-control">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+<div>&nbsp;
+
+<div class="form-group"><label for="pprogrammingskills">Preferred programming skill level (0-9) </label><select id="pprogrammingskills" class="form-control">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+<div>&nbsp;
+
+<div class="form-group"><label for="ptechdesign">Preferred technical Design skill level (0-9) </label><select id="ptechdesign" class="form-control">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+<div>&nbsp;
+  <div>&nbsp;
   
   <div class="form-group"><label for="jtitle2">Job #2 Title</label> <input id="jtitle2" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle2" />
 <div>&nbsp;
-  
-<div class="form-group"><label for="jrequire2">Job #2 Requirements</label> <input id="jrequire2" class="form-control" type="text" placeholder="Enter Requirements" aria-describedby="jrequire2" />
-<div>&nbsp;
+
   
 <div class="form-group"><label for="jdescript2">Job #2 Description</label> <input id="jdescript2" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript2" />
 <div>&nbsp;
   
-  <div class="form-group"><label for="jtitle3">Job #3 Title</label> <input id="jtitle3" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle3" />
+  <div class="form-group"><label for="rmajor">Required Major </label><select id="rmajor" class="form-control">
+<option>Industrial Engineering</option>
+<option>FYE</option>
+</select>
 <div>&nbsp;
   
-<div class="form-group"><label for="jrequire3">Job #3 Requirements</label> <input id="jrequire3" class="form-control" type="text" placeholder="Enter Requirements" aria-describedby="jrequire3" />
+<div class="form-group"><label for="exampleFormControlSelect1">Job Location </label><select id="exampleFormControlSelect1" class="form-control">
+<option>Northeast</option>
+<option>South</option>
+<option>Midwest</option>
+<option>West</option>
+</select>
 <div>&nbsp;
   
-<div class="form-group"><label for="jdescript3">Job #3 Description</label> <input id="jdescript3" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript3" />
+  <div class="form-group"><label for="mgpa">Minimum GPA </label> <input id="mgpa" class="form-control" type="text" placeholder="Enter GPA" />
 <div>&nbsp;
+  
+  <div class="form-group"><label for="pstudentcourses">Preferred Courses Taken</label> <input id="pstudentcourses" class="form-control" type="text" placeholder="Enter courses" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="mstudentyear">Minimum Year</label> <input id="mstudentyear" class="form-control" type="text" placeholder="Enter year" />
+<div>&nbsp;  
+
+<div class="form-group"><label for="opportunitytype">Oportunity Type </label><select id="opportunitytype" class="form-control">
+<option>Internship</option>
+<option>Co-op</option>
+<option>Full-time</option>
+</select>
+<div>&nbsp;
+  
+  <div class="form-group"><label for="visasponsor">Sponsorship Available Y/N? </label><select id="visasponsor" class="form-control">
+<option>Yes</option>
+<option>No</option>
+</select>
+<div>&nbsp;
+
+<div class="form-group"><label for="pstatsskils">Preferred statistics skill level (0-9) </label><select id="pstatsskils" class="form-control">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+<div>&nbsp;
+
+<div class="form-group"><label for="pprogrammingskills">Preferred programming skill level (0-9) </label><select id="pprogrammingskills" class="form-control">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+<div>&nbsp;
+
+<div class="form-group"><label for="ptechdesign">Preferred technical Design skill level (0-9) </label><select id="ptechdesign" class="form-control">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+<div>&nbsp;
+  <div>&nbsp;
+  
   
 <div>&nbsp;
 
