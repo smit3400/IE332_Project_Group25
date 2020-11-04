@@ -9,15 +9,44 @@
   <label for="img">Select profile image:</label>
   <input type="file" id="img" name="img" accept="image/*">
   <div>&nbsp;
-<div class="form-group"><label for="cname">Company Name</label> <input id="cname" class="form-control" type="text" placeholder="Enter company name" aria-describedby="cname" />
+<div class="form-group"><label for="cname">Company Name</label> <input id="cname" class="form-control" type="text" placeholder="Enter Name" aria-describedby="cname" />
+<div>&nbsp;
+<div class="form-group"><label for="cdescript">Company Description</label> <input id="cdescript" class="form-control" type="text" placeholder="Enter Description" aria-describedby="cdescript" />
 <div>&nbsp;
   
-<div class="form-group"><label for="cemail">Email Address</label> <input id="cemail" class="form-control" type="email" placeholder="Enter email" aria-describedby="cemail" />
+<div class="form-group"><label for="cemail">Email Address</label> <input id="cemail" class="form-control" type="email" placeholder="Enter Email" aria-describedby="cemail" />
 <div>&nbsp;
   
 <div class="form-group"><label for="comphonenum">Phone Number (area code first) </label> <input id="comphonenum" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
 <div>&nbsp;
-
+  
+<div class="form-group"><label for="jtitle">Job #1 Title</label> <input id="jtitle" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="jrequire">Job #1 Requirements</label> <input id="jrequire" class="form-control" type="text" placeholder="Enter Requirements" aria-describedby="jrequire" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="jdescript">Job #1 Description</label> <input id="jdescript" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript" />
+<div>&nbsp;
+  
+  <div class="form-group"><label for="jtitle2">Job #2 Title</label> <input id="jtitle2" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle2" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="jrequire2">Job #2 Requirements</label> <input id="jrequire2" class="form-control" type="text" placeholder="Enter Requirements" aria-describedby="jrequire2" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="jdescript2">Job #2 Description</label> <input id="jdescript2" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript2" />
+<div>&nbsp;
+  
+  <div class="form-group"><label for="jtitle3">Job #3 Title</label> <input id="jtitle3" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle3" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="jrequire3">Job #3 Requirements</label> <input id="jrequire3" class="form-control" type="text" placeholder="Enter Requirements" aria-describedby="jrequire3" />
+<div>&nbsp;
+  
+<div class="form-group"><label for="jdescript3">Job #3 Description</label> <input id="jdescript3" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript3" />
+<div>&nbsp;
+  
 <div>&nbsp;
 
 <button class="btn btn-primary" type="submit">Submit</button></div>
