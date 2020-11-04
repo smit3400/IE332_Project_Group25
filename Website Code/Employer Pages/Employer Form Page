@@ -3,7 +3,7 @@
 <body>
 
 <h1>Employer Profile Setup</h1>
-<p>Welcome! Please enter all relevant information to create your employer profile page.</p>
+<p>Welcome! Please enter all information to create your profile page.</p>
   
 <form action="emp_profile.php"
   <label for="img">Select profile image:</label>
