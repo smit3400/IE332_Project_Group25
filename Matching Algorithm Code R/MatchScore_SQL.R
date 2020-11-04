@@ -10,7 +10,29 @@ cData$Opportunity_Type <- sData$Opportunity_Type == oData$Opportunity_Type
 cData$Work_Sponsorship <- sData$Work_Sponsorship == oData$Work_Sponsorship
 #Create a new column which returns the percent of requirements met
 cData$Match_Score <- apply(cData, 1, function(x)(sum(x)/length(cData[1,]))*100)
-cData$Weight_Score<- apply(cData, 1, function(x)(sum(x)/length(cData[1,]))*100)
+
+skills <- oData$Skill
+
+i<-1
+weightSums <- c(1:length(skills))*0
+while(i < length(skills))
+{
+  if(skills[i] == "Technical Design")
+  {
+    weightSums[i] <- 5 * (sData$Technical_Design_Skill)
+  }
+    else if(skills[i] == "Statistics")
+    {
+      weightSums[i] <- 5 * (sData$Statistics_Skill)
+    }
+    else if(skills[i] == "Programming")
+    {
+      weightSums[i] <- 5 * (sData$Programming_Skill)
+    }
+  i <- i+1
+}
+ 
+cData$Weight_Score<-(cData$Match_Score +  weightSums)
 
 matchResults <- data.frame("Email"=sData$Email, "Opportunity_ID" = oData$Opportunity_ID, "Match_Score" = cData$Match_Score,"Weight_Score" = cData$Weight_Score)
 

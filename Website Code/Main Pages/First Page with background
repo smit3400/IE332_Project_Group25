@@ -18,7 +18,7 @@ body {
   <li><span class="fa-li"><i class="fas fa-check"></i></span>Company Ratings</li>
   <li><span class="fa-li"><i class="fas fa-check"></i></span>Career Advice</li>
 </ul>
-<a href="#" class="btn btn-block btn-primary text-uppercase">I am a Student</a>
+<button onclick="Z:/www/main/student/student_login.html">I am a student</button>
 <!-- Plus Tier -->
 <h5 class="card-title text-muted text-uppercase text-center">
  <hr>
