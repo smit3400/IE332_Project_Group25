@@ -18,7 +18,7 @@ cData$Year <- sData$Year >= oData$Min_Year
 cData$Opportunity_Type <- sData$Opportunity_Type == oData$Opportunity_Type
 cData$Work_Sponsorship <- sData$Work_Sponsorship == oData$Work_Sponsorship
 #Create a new column which returns the percent of requirements met
-cData$Match_Score <- apply(cData, 1, function(x)(sum(x)/length(cData[1,]))*100)
+cData$Match_Score <- apply(cData, 1, function(x)round((sum(x)/length(cData[1,]))*100))
 
 ##Functions to parse and assign skills to course and experience data
 course_skills <- function(course_text){
