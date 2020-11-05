@@ -1,15 +1,15 @@
 require("RMySQL")
 library(RMySQL)
+install.packages("data.table")
+library(data.table)
 args <- commandArgs(TRUE)
 
 ##Connect to the database
 mydb <- dbConnect(MySQL(), user = "g1116905", password = "iegroup25", dbname = "g1116905", host = "mydb.itap.purdue.edu")
 on.exit(dbDisconnect(mydb))
 
-##Initialize student data and all opportunities data into dataframes
-sData <- dbReadTable(mydb, "Student")
-oData<- dbReadTable(mydb, "Opportunities")
-
+matching <- function(sData, oData)
+{
 ##Check each constraint for a match 
 cData <- data.frame("Major" = sData$Major == oData$Required_Major)
 cData$Location <- sData$Location == oData$Location
@@ -29,7 +29,7 @@ course_skills <- function(course_text){
   
   stat_keyword <- c("IE230", "IE330", "IE336")
   prog_keyword <- c("IE332", "IE335", "CS159")
-  tech_keyword <- c("IE343", "IE370", "IE383", "IE386", "IE431", "IE470", "IE474", "IE484")
+  tech_keyword <- c("IE343", "IE370", "IE383", "IE386", "IE431", "IE470", "IE474", "IE484", "ME270","NUCL273")
   
   skills <- c(0,0,0)
   skills[1] <- sum(sapply(text_list, function(x)sum(grepl(x,stat_keyword))))
@@ -87,4 +87,24 @@ while(i <= length(cData$Match_Score))
 
 matchResults <- data.frame("Email"=sData$Email, "Opportunity_ID" = oData$Opportunity_ID, "Match_Score" = cData$Match_Score,"Weight_Score" = cData$Weight_Score)
 
-dbWriteTable(mydb, "Match_Score", matchResults, overwrite = TRUE, row.names = FALSE)
+return(matchResults)
+
+}
+
+
+
+##Initialize student data and all opportunities data into dataframes
+sData <- dbReadTable(mydb, "Student")
+oData<- dbReadTable(mydb, "Opportunities")
+
+i<-1
+matchTable <- data.frame("Email" = character(), "Opportunity_ID"  = integer(), "Match_Score" = integer(),"Weight_Score" = integer())
+while(i<=length(sData$Email))
+{
+    temp <- matching(sData = sData[i,], oData = oData)
+    matchTable <- rbind(matchTable,temp)
+    i<-i+1
+}
+
+dbWriteTable(mydb, "Match_Score", matchTable, overwrite = TRUE, row.names = FALSE)
+
