@@ -20,6 +20,7 @@
 <div class="form-group"><label for="comphonenum">Phone Number (area code first) </label> <input id="comphonenum" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
 <div>&nbsp;
   <div>&nbsp;
+    <div>&nbsp;
   
 <div class="form-group"><label for="jtitle">Job #1 Title</label> <input id="jtitle" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle" />
 <div>&nbsp;
@@ -62,49 +63,8 @@
 <option>No</option>
 </select>
 <div>&nbsp;
-
-<div class="form-group"><label for="pstatsskils">Preferred statistics skill level (0-9) </label><select id="pstatsskils" class="form-control">
-  <option>0</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-</select>
-<div>&nbsp;
-
-<div class="form-group"><label for="pprogrammingskills">Preferred programming skill level (0-9) </label><select id="pprogrammingskills" class="form-control">
-  <option>0</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-</select>
-<div>&nbsp;
-
-<div class="form-group"><label for="ptechdesign">Preferred technical Design skill level (0-9) </label><select id="ptechdesign" class="form-control">
-  <option>0</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-</select>
-<div>&nbsp;
   <div>&nbsp;
+    <div>&nbsp;
   
   <div class="form-group"><label for="jtitle2">Job #2 Title</label> <input id="jtitle2" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle2" />
 <div>&nbsp;
@@ -149,49 +109,6 @@
 </select>
 <div>&nbsp;
 
-<div class="form-group"><label for="pstatsskils">Preferred statistics skill level (0-9) </label><select id="pstatsskils" class="form-control">
-  <option>0</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-</select>
-<div>&nbsp;
-
-<div class="form-group"><label for="pprogrammingskills">Preferred programming skill level (0-9) </label><select id="pprogrammingskills" class="form-control">
-  <option>0</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-</select>
-<div>&nbsp;
-
-<div class="form-group"><label for="ptechdesign">Preferred technical Design skill level (0-9) </label><select id="ptechdesign" class="form-control">
-  <option>0</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-</select>
-<div>&nbsp;
-  <div>&nbsp;
-  
   
 <div>&nbsp;
 
