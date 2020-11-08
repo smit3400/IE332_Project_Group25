@@ -22,10 +22,10 @@
   <div>&nbsp;
     <div>&nbsp;
   
-<div class="form-group"><label for="jtitle">Job #1 Title</label> <input id="jtitle" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle" />
+<div class="form-group"><label for="jtitle">Job Title</label> <input id="jtitle" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle" />
 <div>&nbsp;
   
-  <div class="form-group"><label for="jdescript">Job #1 Description</label> <input id="jdescript" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript" />
+  <div class="form-group"><label for="jdescript">Job Description</label> <input id="jdescript" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript" />
 <div>&nbsp;
   
   <div class="form-group"><label for="rmajor">Required Major </label><select id="rmajor" class="form-control">
@@ -66,11 +66,11 @@
   <div>&nbsp;
     <div>&nbsp;
   
-  <div class="form-group"><label for="jtitle2">Job #2 Title</label> <input id="jtitle2" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle2" />
+  <div class="form-group"><label for="jtitle2">Job Title</label> <input id="jtitle2" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle2" />
 <div>&nbsp;
 
   
-<div class="form-group"><label for="jdescript2">Job #2 Description</label> <input id="jdescript2" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript2" />
+<div class="form-group"><label for="jdescript2">Job Description</label> <input id="jdescript2" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript2" />
 <div>&nbsp;
   
   <div class="form-group"><label for="rmajor">Required Major </label><select id="rmajor" class="form-control">
