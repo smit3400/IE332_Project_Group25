@@ -46,13 +46,13 @@
 	<div class="form-group"><label for="GPA">GPA </label> <input id="GPA" class="form-control" type="text" placeholder="Enter GPA" />
 	<div>&nbsp;
   
-	<div class="form-group"><label for="Experience">Experience</label> <input id="Experience" class="form-control" type="text" placeholder="Enter experience" />
+	<div class="form-group"><label for="Experience">Technical Skills (no commas, e.g. python CAD java)</label> <input id="Experience" class="form-control" type="text" placeholder="Enter experience" />
 	<div>&nbsp;
   
-	<div class="form-group"><label for="Courses">Courses (only relevant to IE and/or FYE</label> <input id="Courses" class="form-control" type="text" placeholder="Enter courses" />
+	<div class="form-group"><label for="Courses">Courses (only relevant to IE and/or FYE, no commas, e.g. IE230 IE343 IE270)</label> <input id="Courses" class="form-control" type="text" placeholder="Enter courses" />
 	<div>&nbsp;
   
-	<div class="form-group"><label for="Year">Year</label> <input id="Year" class="form-control" type="text" placeholder="Enter year" />
+	<div class="form-group"><label for="Year">Year (1,2,3, etc.)</label> <input id="Year" class="form-control" type="text" placeholder="Enter year" />
 	<div>&nbsp;  
 
 	<div class="form-group"><label for="Opportunity_Type">Oportunity Type </label>
@@ -74,7 +74,7 @@
 	<select id="Work_Sponsorship" class="form-control">
 		<option>Yes</option>
 		<option>No</option>
-	</select>
+	</select> 
 	<div>&nbsp;
 
 	<input type="submit" value="Create Account" />
@@ -100,8 +100,9 @@ $Opportunity_Type = $_POST['Opportunity_Type'];
 $Relocation = $_POST['Relocation'];
 $Work_Sponsorship = $_POST['Work_Sponsorship'];
 $query = "INSERT INTO Student (Email, Password, Fname, Lname, Phone_Number, Major, Location, GPA, Experience, Courses, Year, Opportunity_Type, Relocation, Work_Sponsorship) VALUES ('".$Email."', '".$Password."', '".$Fname."', '".$Lname."', '".$Phone_Number."', '".$Major."', '".$Location."', '".$GPA."', '".$Experience."', '".$Courses."', '".$Year."', '".$Opportunity_Type."', '".$Relocation."', '".$Work_Sponsorship."')";
-mysqli_query($data_base,$query)or die ('Error in updating Database');
+$result = mysqli_query($data_base,$query)or die ('Error in updating Database');
 }
+
 ?>
 
 </html>
