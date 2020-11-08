@@ -24,7 +24,7 @@
 	<div class="form-group"><label for="Lname">Last Name</label> <input id="Lname" class="form-control" type="text" placeholder="Enter last name" aria-describedby="Lname" />
 	<div>&nbsp;
 
-	<div class="form-group"><label for="Phone_Number">Phone Number (area code first) </label> <input id="Phone_Number" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
+	<div class="form-group"><label for="Phone_Number">Phone Number (area code first) </label> <input id="Phone_Number" class="form-control" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1234567890" />
 	<div>&nbsp;
   
 	<div class="form-group"><label for="Major">Major</label>
