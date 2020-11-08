@@ -21,49 +21,9 @@
 <div class="form-group"><label for="studentexperience">Experience</label> <input id="studentexperience" class="form-control" type="text" placeholder="Enter experience" />
 <div>&nbsp;
   
-<div class="form-group"><label for="studentcourses">Suggested Courses</label> <input id="studentcourses" class="form-control" type="text" placeholder="Enter courses" />
+<div class="form-group"><label for="studentcourses">Recommended Courses</label> <input id="studentcourses" class="form-control" type="text" placeholder="Enter courses" />
 <div>&nbsp;
 
-<div class="form-group"><label for="statsskils">Statistics skill level (0-9) </label><select id="statsskils" class="form-control">
-  <option>0</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-</select>
-<div>&nbsp;
-
-<div class="form-group"><label for="programmingskills">Programming skill level (0-9) </label><select id="programmingskills" class="form-control">
-  <option>0</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-</select>
-<div>&nbsp;
-
-<div class="form-group"><label for="techdesign">Technical Design skill level (0-9) </label><select id="techdesign" class="form-control">
-  <option>0</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-  <option>6</option>
-  <option>7</option>
-  <option>8</option>
-  <option>9</option>
-</select>
 <div>&nbsp;
 
 <button class="btn btn-primary" type="submit">Submit</button></div>
