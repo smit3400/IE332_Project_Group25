@@ -23,14 +23,19 @@ if (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();
 }else{
-	echo "Connected Successfully!";
+	echo "Connected Successfully!" . "<br>";
 }
 
-$sql = "SELECT Fname FROM Student";
+$sql = "SELECT * FROM Student";
 if ($result = mysqli_query($data_base,$sql)) {
-    printf("Select returned %d rows.\n", mysqli_num_rows($result));
+    printf("Select returned %d rows. <br>", mysqli_num_rows($result));
     /* free result set */
-    mysqli_free_result($result);
+    while ($row=mysqli_fetch_row($result))
+    {
+	    printf ("%s %s %s <br>", $row[0], $row[1], $row[2]);
+    }
+	  // Free result set
+	  //mysqli_free_result($result);
 }
 mysqli_close($data_base);
 
