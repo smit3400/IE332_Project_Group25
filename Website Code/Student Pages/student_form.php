@@ -5,38 +5,6 @@
 <h1>Student Profile Setup</h1>
 <p>Welcome! Please enter all relevant information to create your student profile page.</p>
 
-</body>
-
-<?php
-include "new_connection.php"; // use database connection
-
-if (isset($_POST['submit'])) {
-	$Email = $_POST['Email'];
-	$Password = $_POST['Password'];
-	$Fname = $_POST['Fname'];
-	$Lname = $_POST['Lname'];
-	$Phone_Number = $_POST['Phone_Number'];
-	$Major = $_POST['Major'];
-	$Location = $_POST['Location'];
-	$GPA = $_POST['GPA'];
-	$Experience = $_POST['Experience'];
-	$Courses = $_POST['Courses'];
-	$Year = $_POST['Year'];
-	$Opportunity_Type = $_POST['Opportunity_Type'];
-	$Relocation = $_POST['Relocation'];
-	$Work_Sponsorship = $_POST['Work_Sponsorship'];
-
-	$insert = mysqli_query($data_base, "INSERT INTO Student (Email, Password, Fname, Lname, Phone_Number, Major, Location, GPA, Experience, Courses, Year, Opportunity_Type, Relocation, Work_Sponsorship) VALUES ('$Email', '$Password', '$Fname', '$Lname', '$Phone_Number', '$Major', '$Location', '$GPA', '$Experience', '$Courses', '$Year', '$Opportunity_Type', '$Relocation', '$Work_Sponsorship')");
-
-	if(!$insert){
-		echo mysqli_error();
-	}
-	else{
-		echo "Records added successfully!";
-	}
-}
-mysqli_close($data_base); //close connection
-?>
 
 <form method="POST">
 	
@@ -108,4 +76,39 @@ mysqli_close($data_base); //close connection
 	<br/>
 	<input type="submit" value="Create Account" />
 </form>
+
+
+<?php
+include "new_connection.php"; // use database connection
+
+if (isset($_POST['submit'])) {
+	$Email = $_POST['Email'];
+	$Password = $_POST['Password'];
+	$Fname = $_POST['Fname'];
+	$Lname = $_POST['Lname'];
+	$Phone_Number = $_POST['Phone_Number'];
+	$Major = $_POST['Major'];
+	$Location = $_POST['Location'];
+	$GPA = $_POST['GPA'];
+	$Experience = $_POST['Experience'];
+	$Courses = $_POST['Courses'];
+	$Year = $_POST['Year'];
+	$Opportunity_Type = $_POST['Opportunity_Type'];
+	$Relocation = $_POST['Relocation'];
+	$Work_Sponsorship = $_POST['Work_Sponsorship'];
+
+	$sql = "INSERT INTO Student (Email, Password, Fname, Lname, Phone_Number, Major, Location, GPA, Experience, Courses, Year, Opportunity_Type, Relocation, Work_Sponsorship) 
+	VALUES ('".$Email."', '".$Password."', '".$Fname."', '".$Lname."', '".$Phone_Number."', '".$Major."', '".$Location."', '".$GPA."', '".$Experience."', '".$Courses."', '".$Year."', '".$Opportunity_Type."', '".$Relocation."', '".$Work_Sponsorship."')";
+}
+
+if (mysqli_query($data_base, $sql)) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . mysqli_error($data_base);
+}
+
+mysqli_close($data_base);
+?>
+
+</body>
 </html>
