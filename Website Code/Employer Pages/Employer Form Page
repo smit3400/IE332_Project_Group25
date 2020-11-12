@@ -1,119 +1,94 @@
-<!DOCTYPE html>
-<html>
-<body>
-
+<p>&nbsp;</p>
 <h1>Employer Profile Setup</h1>
 <p>Welcome! Please enter all information to create your profile page.</p>
-  
-<form action="emp_profile.php"
-  <label for="img">Select profile image:</label>
-  <input type="file" id="img" name="img" accept="image/*">
-  <div>&nbsp;
+<form action="emp_profile.php">Select profile image: <input id="img" accept="image/*" name="img" type="file" />
+<div>&nbsp;
 <div class="form-group"><label for="cname">Company Name</label> <input id="cname" class="form-control" type="text" placeholder="Enter Name" aria-describedby="cname" />
 <div>&nbsp;
 <div class="form-group"><label for="cdescript">Company Description</label> <input id="cdescript" class="form-control" type="text" placeholder="Enter Description" aria-describedby="cdescript" />
 <div>&nbsp;
-  
 <div class="form-group"><label for="cemail">Email Address</label> <input id="cemail" class="form-control" type="email" placeholder="Enter Email" aria-describedby="cemail" />
 <div>&nbsp;
-  
-<div class="form-group"><label for="comphonenum">Phone Number (area code first) </label> <input id="comphonenum" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
+<div class="form-group"><label for="cphone">Phone Number (area code first) </label> <input id="cphone" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" placeholder="123-456-7890" />
 <div>&nbsp;
-  <div>&nbsp;
-    <div>&nbsp;
-  
+<div>&nbsp;
+<div>&nbsp;
 <div class="form-group"><label for="jtitle">Job Title</label> <input id="jtitle" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle" />
 <div>&nbsp;
-  
-  <div class="form-group"><label for="jdescript">Job Description</label> <input id="jdescript" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript" />
+<div class="form-group"><label for="jdescript">Job Description</label> <input id="jdescript" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript" />
 <div>&nbsp;
-  
-  <div class="form-group"><label for="rmajor">Required Major </label><select id="rmajor" class="form-control">
+<div class="form-group"><label for="rmajor">Required Major </label><select id="rmajor" class="form-control">
 <option>Industrial Engineering</option>
 <option>FYE</option>
 </select>
 <div>&nbsp;
-  
-<div class="form-group"><label for="exampleFormControlSelect1">Job Location </label><select id="exampleFormControlSelect1" class="form-control">
+<div class="form-group"><label for="jlocate">Job Location </label><select id="jlocate" class="form-control">
 <option>Northeast</option>
 <option>South</option>
 <option>Midwest</option>
 <option>West</option>
 </select>
 <div>&nbsp;
-  
-  <div class="form-group"><label for="mgpa">Minimum GPA </label> <input id="mgpa" class="form-control" type="text" placeholder="Enter GPA" />
+<div class="form-group"><label for="mgpa">Minimum GPA </label> <input id="mgpa" class="form-control" type="text" placeholder="Enter GPA" />
 <div>&nbsp;
-  
-  <div class="form-group"><label for="pstudentcourses">Preferred Courses Taken</label> <input id="pstudentcourses" class="form-control" type="text" placeholder="Enter courses" />
+<div class="form-group"><label for="pskill">Preferred Skill of Candidate </label><select id="pskill" class="form-control">
+<option>Technical Design</option>
+<option>Programming</option>
+<option>Statistics</option>
+</select>
 <div>&nbsp;
-  
-<div class="form-group"><label for="mstudentyear">Minimum Year</label> <input id="mstudentyear" class="form-control" type="text" placeholder="Enter year" />
-<div>&nbsp;  
-
-<div class="form-group"><label for="opportunitytype">Oportunity Type </label><select id="opportunitytype" class="form-control">
+<div class="form-group"><label for="myr">Minimum Year</label> <input id="myr" class="form-control" type="text" placeholder="Enter year" />
+<div>&nbsp;
+<div class="form-group"><label for="opptype">Oportunity Type </label><select id="opptype" class="form-control">
 <option>Internship</option>
 <option>Co-op</option>
 <option>Full-time</option>
 </select>
 <div>&nbsp;
-  
-  <div class="form-group"><label for="visasponsor">Sponsorship Available Y/N? </label><select id="visasponsor" class="form-control">
+<div class="form-group"><label for="visa">Sponsorship Available Y/N? </label><select id="visa" class="form-control">
 <option>Yes</option>
 <option>No</option>
 </select>
 <div>&nbsp;
-  <div>&nbsp;
-    <div>&nbsp;
-  
-  <div class="form-group"><label for="jtitle2">Job Title</label> <input id="jtitle2" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle2" />
 <div>&nbsp;
-
-  
+<div>&nbsp;
+<div class="form-group"><label for="jtitle2">Job Title</label> <input id="jtitle2" class="form-control" type="text" placeholder="Enter Title" aria-describedby="jtitle2" />
+<div>&nbsp;
 <div class="form-group"><label for="jdescript2">Job Description</label> <input id="jdescript2" class="form-control" type="text" placeholder="Enter Description" aria-describedby="jdescript2" />
 <div>&nbsp;
-  
-  <div class="form-group"><label for="rmajor">Required Major </label><select id="rmajor" class="form-control">
+<div class="form-group"><label for="rmajor2">Required Major </label><select id="rmajor2" class="form-control">
 <option>Industrial Engineering</option>
 <option>FYE</option>
 </select>
 <div>&nbsp;
-  
-<div class="form-group"><label for="exampleFormControlSelect1">Job Location </label><select id="exampleFormControlSelect1" class="form-control">
+<div class="form-group"><label for="jlocate2">Job Location </label><select id="jlocate2" class="form-control">
 <option>Northeast</option>
 <option>South</option>
 <option>Midwest</option>
 <option>West</option>
 </select>
 <div>&nbsp;
-  
-  <div class="form-group"><label for="mgpa">Minimum GPA </label> <input id="mgpa" class="form-control" type="text" placeholder="Enter GPA" />
+<div class="form-group"><label for="mgpa2">Minimum GPA </label> <input id="mgpa2" class="form-control" type="text" placeholder="Enter GPA" />
 <div>&nbsp;
-  
-  <div class="form-group"><label for="pstudentcourses">Preferred Courses Taken</label> <input id="pstudentcourses" class="form-control" type="text" placeholder="Enter courses" />
+<div class="form-group"><label for="pskill2">Preferred Skill of Candidate </label><select id="pskill2" class="form-control">
+<option>Technical Design</option>
+<option>Programming</option>
+<option>Statistics</option>
+</select>
 <div>&nbsp;
-  
-<div class="form-group"><label for="mstudentyear">Minimum Year</label> <input id="mstudentyear" class="form-control" type="text" placeholder="Enter year" />
-<div>&nbsp;  
-
-<div class="form-group"><label for="opportunitytype">Oportunity Type </label><select id="opportunitytype" class="form-control">
+<div class="form-group"><label for="myr2">Minimum Year</label> <input id="myr2" class="form-control" type="text" placeholder="Enter year" />
+<div>&nbsp;
+<div class="form-group"><label for="opptype2">Oportunity Type </label><select id="opptype2" class="form-control">
 <option>Internship</option>
 <option>Co-op</option>
 <option>Full-time</option>
 </select>
 <div>&nbsp;
-  
-  <div class="form-group"><label for="visasponsor">Sponsorship Available Y/N? </label><select id="visasponsor" class="form-control">
+<div class="form-group"><label for="visa2">Sponsorship Available Y/N? </label><select id="visa2" class="form-control">
 <option>Yes</option>
 <option>No</option>
 </select>
 <div>&nbsp;
-
-  
-<div>&nbsp;
-
-<button class="btn btn-primary" type="submit">Submit</button></div>
-  
+<div>&nbsp; <button class="btn btn-primary" type="submit">Submit</button></div>
+</div>
 </form>
-</body>
-</html>
