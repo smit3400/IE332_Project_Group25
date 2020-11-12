@@ -37,8 +37,20 @@ if ($result = mysqli_query($data_base,$sql)) {
 	  // Free result set
 	  //mysqli_free_result($result);
 }
-mysqli_close($data_base);
+echo "<br>" . "Inserting Data Test". "<br>" . "<br>";
 
+$advisoremail = 'advisor2@purdue.edu';
+
+$sql = "INSERT INTO Purdue_IE (Email, Password, Fname, Lname)
+VALUES('" . $advisoremail . "', 'advisorpass', 'afirst', 'alast')";
+
+if (mysqli_query($data_base, $sql)) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+mysqli_close($data_base);
 ?>
 
 </body>
