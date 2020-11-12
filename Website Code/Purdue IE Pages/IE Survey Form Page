@@ -17,10 +17,6 @@
   
 <div class="form-group"><label for="gpa">Add Advice </label> <input id="gpa" class="form-control" type="text" placeholder="Enter Advice" />
 <div>&nbsp;
-  
-<div class="form-group"><label for="studentexperience">Experience</label> <input id="studentexperience" class="form-control" type="text" placeholder="Enter experience" />
-<div>&nbsp;
-  
 <div class="form-group"><label for="studentcourses">Recommended Courses</label> <input id="studentcourses" class="form-control" type="text" placeholder="Enter courses" />
 <div>&nbsp;
 
