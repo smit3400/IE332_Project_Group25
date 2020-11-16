@@ -6,7 +6,7 @@
 <p>Welcome! Please enter all relevant information to create your student profile page.</p>
 
 
-<form method="POST">
+<form action = "welcome.php" method="get">
 	
 	Email Address: <input type = "email" name = "Email" placeholder = "Enter email address" Required>
 	<br/>
@@ -20,7 +20,7 @@
 	Last Name: <input type = "text" name = "Lname" placeholder = "Enter last name" Required>
 	<br/>
 	<br/>
-	Phone Number (area code first): <input type = "tel" pattern = "[0-9]{3}[0-9]{3}[0-9]{4}" placeholder = "1234567890" Required>
+	Phone Number (area code first): <input type = "text" name = "Phone_Number" placeholder = "1234567890" Required>
 	<br/>
 	<br/>
 	Major:
@@ -46,7 +46,6 @@
 	<br/>
 	<br/>
 	Courses (only relevant to IE and/or FYE, no commas, e.g. IE230 IE343 IE270): <input type="text" name = "Courses" placeholder="Enter courses" Required>
-	<div>&nbsp;
 	<br/>
 	<br/>
 	Year (1,2,3, etc.): <input type="text" name = "Year" placeholder="Enter year" Required>
@@ -54,9 +53,9 @@
 	<br/>
 	Oportunity Type:
 	<select type = "text" name = "Opportunity_Type">
-		<option>Internship</option>
-		<option>Co-op</option>
-		<option>Full Time</option>
+		<option>internship</option>
+		<option>co-op</option>
+		<option>full Time</option>
 	</select>
 	<br/>
 	<br/>
@@ -76,39 +75,6 @@
 	<br/>
 	<input type="submit" value="Create Account" />
 </form>
-
-
-<?php
-include "new_connection.php"; // use database connection
-
-if (isset($_POST['submit'])) {
-	$Email = $_POST['Email'];
-	$Password = $_POST['Password'];
-	$Fname = $_POST['Fname'];
-	$Lname = $_POST['Lname'];
-	$Phone_Number = $_POST['Phone_Number'];
-	$Major = $_POST['Major'];
-	$Location = $_POST['Location'];
-	$GPA = $_POST['GPA'];
-	$Experience = $_POST['Experience'];
-	$Courses = $_POST['Courses'];
-	$Year = $_POST['Year'];
-	$Opportunity_Type = $_POST['Opportunity_Type'];
-	$Relocation = $_POST['Relocation'];
-	$Work_Sponsorship = $_POST['Work_Sponsorship'];
-
-	$sql = "INSERT INTO Student (Email, Password, Fname, Lname, Phone_Number, Major, Location, GPA, Experience, Courses, Year, Opportunity_Type, Relocation, Work_Sponsorship) 
-	VALUES ('".$Email."', '".$Password."', '".$Fname."', '".$Lname."', '".$Phone_Number."', '".$Major."', '".$Location."', '".$GPA."', '".$Experience."', '".$Courses."', '".$Year."', '".$Opportunity_Type."', '".$Relocation."', '".$Work_Sponsorship."')";
-}
-
-if (mysqli_query($data_base, $sql)) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($data_base);
-}
-
-mysqli_close($data_base);
-?>
 
 </body>
 </html>
