@@ -3,7 +3,7 @@
 <body>
 <h1>Employer Profile Setup</h1>
 <p>Welcome! Please enter all relevant information to create your Employer profile page.</p>
-<form action="Employer_Welcome.php" method="get">
+<form action="employer_form_submit.php" method="get">
 E-mail: <input type="text" name="email"><br>
   <div>
   </div>
