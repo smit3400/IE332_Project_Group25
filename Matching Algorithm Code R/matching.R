@@ -34,14 +34,14 @@ experience_skills <- function(experience_text){
   text_list <- unlist(strsplit(tolower(experience_text)," "))
   text_list <- sapply(text_list, function(x)paste("\\b", x,"\\b", sep = ""))
   
-  stat_keyword <- c("statistics", "modeling", "analysis", "probability","minitab","regression")
-  prog_keyword <- c("python", "matlab", "c", "java", "html", "r")
+  stat_keyword <- c("statistics", "modeling", "analysis", "probability","minitab","regression","queues","experiment")
+  prog_keyword <- c("python", "matlab", "c", "java", "html", "r","c++")
   tech_keyword <- c("cad", "production", "design", "cam", "supply chain","excel","manufacturing")
   
   skills <- c(0,0,0)
-  skills[1] <- sum(sapply(text_list, function(x)sum(grepl(x,stat_keyword,ignore.case = TRUE))))
-  skills[2] <- sum(sapply(text_list, function(x)sum(grepl(x,prog_keyword,ignore.case = TRUE))))
-  skills[3] <- sum(sapply(text_list, function(x)sum(grepl(x,tech_keyword,ignore.case = TRUE))))
+  skills[1] <- sum(sapply(text_list, function(x)sum(grepl(x,stat_keyword,ignore.case = TRUE,fixed = TRUE))))
+  skills[2] <- sum(sapply(text_list, function(x)sum(grepl(x,prog_keyword,ignore.case = TRUE,fixed = TRUE))))
+  skills[3] <- sum(sapply(text_list, function(x)sum(grepl(x,tech_keyword,ignore.case = TRUE,fixed = TRUE))))
   skills
 }
 
