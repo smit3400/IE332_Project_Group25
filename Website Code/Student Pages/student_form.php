@@ -6,7 +6,7 @@
 <p>Welcome! Please enter all relevant information to create your student profile page.</p>
 
 
-<form action = "welcome.php" method="get">
+<form action = "welcome.php" method="post">
 	
 	Email Address: <input type = "email" name = "Email" placeholder = "Enter email address" Required>
 	<br/>
@@ -20,7 +20,7 @@
 	Last Name: <input type = "text" name = "Lname" placeholder = "Enter last name" Required>
 	<br/>
 	<br/>
-	Phone Number (area code first): <input type = "text" name = "Phone_Number" placeholder = "1234567890" Required>
+	Phone Number (area code first): <input type = "number" name = "Phone_Number" placeholder = "1234567890" Required>
 	<br/>
 	<br/>
 	Major:
