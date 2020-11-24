@@ -27,10 +27,10 @@ session_start();
 
   echo "Inserting Data". "<br>" . "<br>";
 
-  $type = $_GET["opportunty_type"];
+  $type = $_GET["opportunity_type"];
   $gpa = $_GET["min_gpa"];
   $year = $_GET["min_year"];
-  $major = $_GET["required_major"];
+  $major = $_GET["major"];
   $title = $_GET["job_title"];
   $description = $_GET["job_description"];
   $location = $_GET["location"];
@@ -49,8 +49,7 @@ session_start();
   mysqli_close($data_base);
 
   ?>
-
-
+  <p><a href = "employer_main.php">Main Page</a></p>
 
 </body>
 </html>

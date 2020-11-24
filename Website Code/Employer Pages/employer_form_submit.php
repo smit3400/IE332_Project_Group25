@@ -42,7 +42,7 @@
 	mysqli_close($data_base);
 
 	?>
-
+	<p><a href = "employer_login.php">Login Page</a></p>
 
 
 </body>

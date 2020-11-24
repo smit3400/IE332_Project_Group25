@@ -43,6 +43,6 @@ printf ("Industry:<br>%s <br><br>", $employer_industry);
 <html>
 <body>
 
-
+<p><a href = "employer_main.php">Main Page</a></p>
 </body>
 </html>
