@@ -40,8 +40,6 @@
 	mysqli_close($data_base);
 
 	?>
-
-
-
+	<p><a href = "IE_login.php">Login Page</a></p>
 </body>
 </html>
