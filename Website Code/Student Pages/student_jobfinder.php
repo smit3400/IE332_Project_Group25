@@ -22,7 +22,7 @@ session_start();
   }
 
   //Pulling info from sql
-  $sql = "SELECT O.*, Weight_Score, Company_Name FROM Match_Score M, Opportunities O, Employer WHERE M.Opportunity_ID = O.Opportunity_ID AND M.Email='" . $_SESSION["stud_email"] . "' ORDER BY Weight_Score DESC";
+  $sql = "SELECT O.*, M.Weight_Score, E.Company_Name FROM Match_Score M, Opportunities O, Employer E WHERE M.Opportunity_ID = O.Opportunity_ID AND M.Email='" . $_SESSION["stud_email"] . "' AND O.Email = E.Email ORDER BY Weight_Score DESC";
   $result = mysqli_query($data_base,$sql);
 
   if (mysqli_num_rows($result) > 0) {
