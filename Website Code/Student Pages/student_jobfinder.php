@@ -53,7 +53,7 @@ session_start();
   mysqli_close($data_base);
   ?>
   
-  <p><a href = "employer_main.php">Main Page</a></p>
+  <p><a href = "student_main.php">Main Page</a></p>
 
 </body>
 </html>
