@@ -1,4 +1,4 @@
-matching <- function(sData, oData)
+matching <- function(sData, oData, mydb)
 {
 ##Check each constraint for a match 
 cData <- data.frame("Major" = sData$Major == oData$Required_Major)
@@ -50,6 +50,18 @@ cSkill <- course_skills(sData$Courses)
 eSkill <- experience_skills(sData$Experience)
 skillTotal <- cSkill + eSkill
 skillData <- data.frame(Statistics = skillTotal[1], Programming = skillTotal[2], Technical_Design = skillTotal[3])
+
+Q1<-sprintf("UPDATE `g1116905`.`Student` SET `Statistics_Skill` = '%s' WHERE `Student`.`Email` = '%s';", sData$Statistics, sData$Email)
+Q1 <- str_replace_all(str_replace_all(Q1,"\n",""),"\\s+"," ")
+dbGetQuery(mydb,Q1)
+
+Q2<-sprintf("UPDATE `g1116905`.`Student` SET `Programming_Skill` = '%s' WHERE `Student`.`Email` = '%s';", sData$Programming, sData$Email)
+Q2 <- str_replace_all(str_replace_all(Q2,"\n",""),"\\s+"," ")
+dbGetQuery(mydb,Q2)
+
+Q3<-sprintf("UPDATE `g1116905`.`Student` SET `Technical_Design_Skill` = '%s' WHERE `Student`.`Email` = '%s';", sData$Technical_Design, sData$Email)
+Q3 <- str_replace_all(str_replace_all(Q3,"\n",""),"\\s+"," ")
+dbGetQuery(mydb,Q3)
 
 i<-1
 oSkill <- oData$Skill
