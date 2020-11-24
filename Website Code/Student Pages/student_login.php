@@ -11,7 +11,7 @@ if(count($_POST)>0) {
 
 	
 	$conn = mysqli_connect($servername, $username, $password, $dbname);
-	$result = mysqli_query($conn,"SELECT * FROM Student WHERE Email='" . $_POST["Email"] . "' AND Password = '". $_POST["Password"]."'");
+	$result = mysqli_query($conn,"SELECT * FROM Student WHERE Email='" . $_POST["stud_email"] . "' AND Password = '". $_POST["stud_password"]."'");
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
 		$message = "Invalid Username or Password!";
@@ -19,7 +19,7 @@ if(count($_POST)>0) {
 		$message = "You are successfully authenticated!";
 		header("Location: student_main.php");
 
-		$_SESSION["email"] =  $_POST["Email"];
+		$_SESSION["stud_email"] =  $_POST["stud_email"];
 
 		while ($row=mysqli_fetch_row($result))
 		{
@@ -44,24 +44,30 @@ if(count($_POST)>0) {
 
 <!DOCTYPE html>
 <html>
-<body>
-
-<h2>Hello Student!</h2>
-
-<h4>Login</h4>
-<form action = "" method = "post">
-	<label>Email:</label><br>
-	<input type="email" name="Email" placeholder="Email address" required>
-	<br>
-	<label>Password:</label><br>
-	<input type="password" name="Password" placeholder="Password" required>
-	<br>
-	<br>
-	<input type="submit" value="Sign in">
-</form>
-
-<p> New user? Create an account <a href = "student_form.php">here</a></p>
-<div class="message"><?php if($message!="") { echo $message; } ?></div>
-
-</body>
+	<head>
+		<link href="login.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<img class="logo" src="https://wl.mypurdue.purdue.edu/static_resources/portal/images/logo.png">
+		<div class="login-container">
+			<h2 class="title">Welcome Student!</h2>
+			<form action="" method = "post">
+				<div class="form">
+					<label for="stud_email">Email:</label>
+				    <input class="input" type="email" id="stud_email" name="stud_email" placeholder="Email address" required>
+				</div>
+			    <br>
+			    <div class="form">
+			    	<label for="stud_password">Password:</label>
+				    <input class="input" type="password" id="stud_password" name="stud_password" placeholder="Password" required>
+			    </div>
+			    <br>
+			    <br>
+			    <input class="sign-in" type="submit" value="Sign in">
+			</form>
+			<p> New user? Create an account below!</p>
+			<p><a class="new-account" href="student_form.php" target="_self" >Create account</a></p>
+		</div>
+		<div class="message"><?php if($message!="") { echo $message; } ?></div>
+	</body>
 </html>
