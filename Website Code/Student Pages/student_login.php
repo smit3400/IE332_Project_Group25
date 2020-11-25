@@ -2,7 +2,8 @@
 
 session_start();
 
-$message="";
+$message = "";
+
 if(count($_POST)>0) {
 	$servername = "mydb.itap.purdue.edu";
 	$username = "g1116905";
