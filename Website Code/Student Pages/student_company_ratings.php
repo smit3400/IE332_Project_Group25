@@ -5,7 +5,7 @@ session_start();
 <p>Hello! Please enter all relevant information to rate this company.</p>
 <form action="student_company_ratings.php" method="get">
 <div>&nbsp;</div>
-Friendliness:<select name="friendliness">
+Overall Job Experience:<select name="experience">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -18,7 +18,7 @@ Friendliness:<select name="friendliness">
 <option value="10">10</option>
 </select><br />
 <div>&nbsp;</div>
-Flexibility:<select name="flexibility">
+Management:<select name="management">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -31,7 +31,7 @@ Flexibility:<select name="flexibility">
 <option value="10">10</option>
 </select><br />
 <div>&nbsp;</div>
-Transparency:<select name="transparency">
+Company Culture:<select name="culture">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
