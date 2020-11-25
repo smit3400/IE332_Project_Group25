@@ -21,22 +21,6 @@ if(count($_POST)>0) {
 		header("Location: student_main.php");
 
 		$_SESSION["stud_email"] =  $_POST["stud_email"];
-
-		while ($row=mysqli_fetch_row($result))
-		{
-			$_SESSION["fname"] = $row[2];
-			$_SESSION["lname"] = $row[3];
-			$_SESSION["number"] = $row[4];
-			$_SESSION["major"] = $row[5];
-			$_SESSION["gpa"] = $row[7];
-			$_SESSION["skills"] = $row[8];
-			$_SESSION["courses"] = $row[9];
-			$_SESSION["year"] = $row[10];
-			$_SESSION["oppor"] = $row[11];
-			$_SESSION["relocate"] = $row[12];
-			$_SESSION["location"] = $row[6];
-			$_SESSION["visa"] = $row[13];
-		}
 	}
 
 	mysqli_close($conn);
