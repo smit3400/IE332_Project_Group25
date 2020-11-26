@@ -2,7 +2,7 @@ require("plotrix")
 library(plotrix)
 
 ##Students = The desired student's email, scores = MatchScores Table, mydb = mydb
-matchPlotStudents <- function(Student = NULL, scores = data.frame(), mydb)
+matchPlotStudents <- function(Student = NULL, mydb)
 {
     
 query <- sprintf("SELECT *
