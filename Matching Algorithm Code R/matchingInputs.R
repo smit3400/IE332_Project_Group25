@@ -29,6 +29,6 @@ while(i<=length(sData$Email))
 
 dbWriteTable(mydb, "Match_Score", matchTable, overwrite = TRUE, row.names = FALSE)
 
-matchPlotStudents(Student = "email@student.com",scores = matchTable, mydb = mydb)
+matchPlotStudents(Student = "email@student.com",mydb = mydb)
 
-
+matchPlotsEmployers(mydb = mydb)
