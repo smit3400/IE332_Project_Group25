@@ -43,4 +43,20 @@ techScore <- dbGetQuery(mydb,techQ)
     skillScores <- data.frame(Programming = progScore[1,], Statistics = StatScore[1,], Technical_Design =techScore[1,])
     barplot(height = as.numeric(skillScores[1,]), names.arg = names(skillScores), ylim=c(0,100),ylab = "Average Weighted Score", xlab = "Skill", main = "Average Score for each skill across all postings")
     box()
+    
+      ##AVG Student ratings by company
+    review_Q<-sprintf("SELECT R.Employer_Email, AVG( R.Overall_Rating ) , E.Industry
+    FROM Company_Rating R, Employer E
+    GROUP BY R.Employer_Email")
+    review_Q <-str_replace_all(str_replace_all(review_Q,"\n",""),"\\s+"," ")
+    reviews <- dbGetQuery(mydb, review_Q)
+    names(reviews)[names(reviews) == "AVG( R.Overall_Rating )"] <- "AVG_Score"
+
+    ##OBTAINED FROM: https://stackoverflow.com/questions/10286473/rotating-x-axis-labels-in-r-for-barplot/21978596
+    rotate_x <- function(data, column_to_plot, labels_vec, rot_angle) {
+        plt <- barplot(data[[column_to_plot]], col='steelblue', xaxt="n",ylim = c(0,10),ylab = "Average Review Score", main = "Employer Review Scores")
+        text(plt, par("usr")[3], labels = labels_vec, srt = rot_angle, adj = c(1.1,1.1), xpd = TRUE, cex=0.6) 
+    }
+    rotate_x(reviews,'AVG_Score', labels_vec = reviews$Employer_Email, rot_angle = 65)
+
 }
