@@ -4,10 +4,23 @@ library(plotrix)
 matchPlotStudents <- function(Student = NULL, mydb)
 {
 
+advisorQ <-sprintf("SELECT Email
+FROM Purdue_IE
+LIMIT 0 , 30")
+advisors <- dbGetQuery(mydb, advisorQ)
+Statement <- any(advisors==Student)
+if(Statement)
+{
+  Student = "M.Email"
+}else
+{
+  Student <- sprintf("'%s'",Student)
+}
+  
 query <- sprintf("SELECT *
-FROM `Match_Score`
-WHERE `Email` = '%s'
-LIMIT 0 , 10",Student)
+ FROM `Match_Score`
+ WHERE `Email` = %s
+ LIMIT 0 , 10",Student)
     query <- str_replace_all(str_replace_all(query,"\n",""),"\\s+"," ")
     print(query)
     studentInfo <- dbGetQuery(mydb, query)
@@ -18,7 +31,7 @@ progQ<-sprintf("SELECT AVG( Weight_Score )
     FROM Match_Score M, Opportunities O
     WHERE M.Opportunity_ID = O.Opportunity_ID
     AND Skill = 'Programming'
-    AND M.Email = '%s'",Student)
+    AND M.Email = %s",Student)
 progQ <- str_replace_all(str_replace_all(progQ,"\n",""),"\\s+"," ")
 progScore <- dbGetQuery(mydb,progQ)
 
@@ -26,7 +39,7 @@ StatQ<-sprintf("SELECT AVG( Weight_Score )
     FROM Match_Score M, Opportunities O
     WHERE M.Opportunity_ID = O.Opportunity_ID
     AND Skill = 'Statistics'
-    AND M.Email = '%s'",Student)
+    AND M.Email = %s",Student)
 StatQ <- str_replace_all(str_replace_all(StatQ,"\n",""),"\\s+"," ")
 StatScore <- dbGetQuery(mydb,StatQ)
 
@@ -34,7 +47,7 @@ techQ<-sprintf("SELECT AVG( Weight_Score )
     FROM Match_Score M, Opportunities O
     WHERE M.Opportunity_ID = O.Opportunity_ID
     AND Skill = 'Technical Design'
-    AND M.Email = '%s'",Student)
+    AND M.Email = %s",Student)
 techQ <- str_replace_all(str_replace_all(techQ,"\n",""),"\\s+"," ")
 techScore <- dbGetQuery(mydb,techQ)
     
@@ -56,6 +69,15 @@ techScore <- dbGetQuery(mydb,techQ)
     }
    
     
+    if(Statement)
+    {
+      layout(matrix(c(1,1,2,3), 2, 2, byrow = TRUE))
+      
+      rotate_x(reviews,'AVG_Score', labels_vec = reviews$Employer_Email, rot_angle = 65)
+      box()
+      barplot(height = as.numeric(skillScores[1,]), col='steelblue',names.arg = c("Programming","Statistics","Design"), ylim=c(0,100),ylab = "Average Weighted Score", xlab = "Skill", main = "Average Score for each skill \nacross all postings")
+      box()
+    }  else {
     layout(matrix(c(1,1,2,3), 2, 2, byrow = TRUE))
     
     rotate_x(reviews,'AVG_Score', labels_vec = reviews$Employer_Email, rot_angle = 65)
@@ -64,6 +86,7 @@ techScore <- dbGetQuery(mydb,techQ)
     box()
     barplot(height = studentInfo$Weight_Score, col='steelblue',names = studentInfo$Opportunity_ID,ylim=c(0,120),ylab = "Weighted Score", xlab = "Job Posting", main = paste("Weighted Scores Across Top 10 jobs \nfor",Student))
     box()
+    }
   
     ##Obtained from https://www.codeproject.com/Articles/1119237/Pass-Arguments-and-Execute-R-script-from-PHP-Forms
     png(filename="C:/Users/justi/OneDrive/Documents/R/student_graphs.png", width=500, height=500)
