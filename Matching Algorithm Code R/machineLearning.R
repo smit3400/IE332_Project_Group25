@@ -1,5 +1,5 @@
+library(rpart)
 library(stringr)
-library(randomForest)
 
 Q1<-sprintf("SELECT O.* , AVG( Weight_Score )
  FROM Match_Score M, Opportunities O
@@ -28,8 +28,7 @@ Q1<-sprintf("SELECT O.* , AVG( Weight_Score )
   test_cat <- OScores[-indexTrain,8]
   
   
-  model <-randomForest(AVG_Score~., data = training)
+  model <-rpart(AVG_Score~., data = training,method = "anova")
   predicted_Weighted_Score <- predict(model, newdata = testing)
   predictions <- cbind(testing,predicted_Weighted_Score)
   predictions<- predictions[,-8]
-  predictions
