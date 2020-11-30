@@ -68,6 +68,7 @@ techScore <- dbGetQuery(mydb,techQ)
         text(plt, par("usr")[3], labels = labels_vec, srt = rot_angle, adj = c(1.1,1.1), xpd = TRUE, cex=0.55) 
     }
    
+    png(filename="C:/Users/justi/OneDrive/Documents/R/student_graphs.png", width=500, height=500)
     
     if(Statement)
     {
@@ -87,9 +88,7 @@ techScore <- dbGetQuery(mydb,techQ)
     barplot(height = studentInfo$Weight_Score, col='steelblue',names = studentInfo$Opportunity_ID,ylim=c(0,120),ylab = "Weighted Score", xlab = "Job Posting", main = paste("Weighted Scores Across Top 10 jobs \nfor",Student))
     box()
     }
-  
-    ##Obtained from https://www.codeproject.com/Articles/1119237/Pass-Arguments-and-Execute-R-script-from-PHP-Forms
-    png(filename="C:/Users/justi/OneDrive/Documents/R/student_graphs.png", width=500, height=500)
+
     dev.off()
     sink('analysis-output.txt', append=FALSE, type = c("output", "message"))
     
