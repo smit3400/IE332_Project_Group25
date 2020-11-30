@@ -28,7 +28,7 @@ Q1<-sprintf("SELECT O.* , AVG( Weight_Score )
   test_cat <- OScores[-indexTrain,8]
   
   
-  model <-rpart(AVG_Score~., data = training,method = "anova")
+  model <-rpart(AVG_Score~Opportunity_Type+Min_GPA+Min_Year+Required_Major+Location+Work_Sponsorship+Skill, data = training,method = "anova",control =rpart.control(minsplit =1,minbucket=1, cp=0))
   predicted_Weighted_Score <- predict(model, newdata = testing)
   predictions <- cbind(testing,predicted_Weighted_Score)
   predictions<- predictions[,-8]
