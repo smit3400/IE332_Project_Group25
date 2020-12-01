@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS DOCUMENT */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+a {
+  color: white;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Style the header */
+.h1 {
+  padding: 0px 40px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  background: black;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side {
+  display: flex;
+}
+
+.divider {
+  margin: 0px 10px;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-family: acumin-pro-semi-condensed, "Franklin Gothic", sans-serif;
+  font-size: 24px
+}
+.title-main {
+  font-weight: 600;
+  font-family: acumin-pro-semi-condensed, "Franklin Gothic", sans-serif;
+  font-size: 24px
+}
+
+body {
+  background: #9b8249;
+}
+
+.page {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 15px;
+}
+
+.person-options {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.button {
+  padding: 15px 70px;
+  height: 10vh;
+  width: 25vw;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  vertical-align:middle;
+  justify-content:center;
+  align-items: center;
+  text-decoration: none;
+  font-family: acumin-pro-semi-condensed, "Franklin Gothic", sans-serif;
+  background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+}
+
+.button {
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 15px 70px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	height: 10vh;
+	width: 25vw;
+	font-size: 24px;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+}
+ 
+.banner1 {
+  padding: 5px;
+  size: 5px 200px;
+}
+ 
+.hand {
+  border-radius: 50px;
+  height: 75vh;
+  width: 50vw;
+  max-width:100%;
+}
+}
+ 
+.banner3 {
+  padding: 5px;
+  size: 5px 200px;
+}
+
+p {
+  text-align: center;
+}
+
+.button1 {
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+}
