@@ -1,18 +1,16 @@
 require("RMySQL")
-library(RMySQL)
-install.packages("data.table")
-library(data.table)
+require("data.table")
 require("stringr")
-library(stringr)
+
 args <- commandArgs(TRUE)
+
 
 ##Connect to the database
 mydb <- dbConnect(MySQL(), user = "g1116905", password = "iegroup25", dbname = "g1116905", host = "mydb.itap.purdue.edu")
 on.exit(dbDisconnect(mydb))
 
-source('~/R/matching.R')
-source('~/R/matchPlotStudents.R')
 
+source('/home/campus/g1116905/www/main/Project_R/matching.R')
 
 ##Initialize student data and all opportunities data into dataframes
 sData <- dbReadTable(mydb, "Student")
@@ -28,7 +26,3 @@ while(i<=length(sData$Email))
 }
 
 dbWriteTable(mydb, "Match_Score", matchTable, overwrite = TRUE, row.names = FALSE)
-
-matchPlotStudents(Student = "email@student.com",mydb = mydb)
-
-matchPlotsEmployers(mydb = mydb)
