@@ -1,8 +1,17 @@
+require("RMySQL")
+require("data.table")
+require("stringr")
 require("plotrix")
-library(plotrix)
 
-matchPlotStudents <- function(Student = NULL, mydb)
-{
+##Connect to the database
+mydb <- dbConnect(MySQL(), user = "g1116905", password = "iegroup25", dbname = "g1116905", host = "mydb.itap.purdue.edu")
+on.exit(dbDisconnect(mydb))
+
+args <- commandArgs(TRUE)
+
+Student <- args[1]
+filename <- args[2]
+filename <- paste(filename,"png",sep=".")
 
 advisorQ <-sprintf("SELECT Email
 FROM Purdue_IE
@@ -15,15 +24,14 @@ if(Statement)
 }else
 {
   Student <- sprintf("'%s'",Student)
-}
-  
-query <- sprintf("SELECT *
+  query <- sprintf("SELECT *
  FROM `Match_Score`
  WHERE `Email` = %s
  LIMIT 0 , 10",Student)
-    query <- str_replace_all(str_replace_all(query,"\n",""),"\\s+"," ")
-    print(query)
-    studentInfo <- dbGetQuery(mydb, query)
+  query <- str_replace_all(str_replace_all(query,"\n",""),"\\s+"," ")
+  print(query)
+  studentInfo <- dbGetQuery(mydb, query)
+}
     
     
     #avg weighted score for job postings of each skill
@@ -68,7 +76,7 @@ techScore <- dbGetQuery(mydb,techQ)
         text(plt, par("usr")[3], labels = labels_vec, srt = rot_angle, adj = c(1.1,1.1), xpd = TRUE, cex=0.55) 
     }
    
-    png(filename="C:/Users/justi/OneDrive/Documents/R/student_graphs.png", width=500, height=500)
+    png(filename=paste0("/home/campus/g1116905/www/main/Project_R/plots/",filename), width=600, height=500)
     
     if(Statement)
     {
@@ -88,8 +96,6 @@ techScore <- dbGetQuery(mydb,techQ)
     barplot(height = studentInfo$Weight_Score, col='steelblue',names = studentInfo$Opportunity_ID,ylim=c(0,120),ylab = "Weighted Score", xlab = "Job Posting", main = paste("Weighted Scores Across Top 10 jobs \nfor",Student))
     box()
     }
-
+    
     dev.off()
     sink('analysis-output.txt', append=FALSE, type = c("output", "message"))
-    
-    }
