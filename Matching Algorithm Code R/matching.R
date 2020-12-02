@@ -92,5 +92,3 @@ matchResults <- data.frame("Email"=sData$Email, "Opportunity_ID" = oData$Opportu
 return(matchResults)
 
 }
-
-
